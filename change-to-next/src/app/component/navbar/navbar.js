@@ -1,23 +1,20 @@
-function Navbar() {
+"use client";
+
+import React, { useState } from "react";
+import Modal from "../modal/modal";
+
+const Navbar = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   return (
     <div className="z-50 flex min-h-14 justify-between py-2  sticky top-0 bg-white w-full sm:px-5 md:px-10 xl:px-12 custom:flex xxl:max-w-1400">
       <div className="flex items-center justify-center xl:hidden sm:inline-flex ">
         <div className="flex items-center justify-center  xl:hidden mr-1 cursor-pointer">
-          <svg
-            className="flex items-center justify-center cursor-pointer"
-            role="presentation"
-            strokeWidth="2"
-            focusable="false"
-            width="22"
-            height="22"
-            viewBox="0 0 22 22"
-          >
-            <path
-              d="M1 5h20M1 11h20M1 17h20"
-              stroke="currentColor"
-              strokeLinecap="round"
-            ></path>
-          </svg>
+          <div>
+            <Modal />
+          </div>
         </div>
         <div className="flex items-center justify-center  md:hidden cursor-pointer">
           <svg
@@ -211,6 +208,6 @@ function Navbar() {
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;
