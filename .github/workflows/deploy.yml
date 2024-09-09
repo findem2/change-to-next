@@ -28,11 +28,11 @@ jobs:
 
       - name: Install Dependencies of Front
         # 올바른 디렉토리를 설정하세요
-        working-directory: ./client # package.json이 있는 디렉토리로 변경
-        run: npm install
+        working-directory: ./ # package.json이 있는 디렉토리로 변경
+        run: npm ci
 
       - name: Build Front
-        working-directory: ./client # 동일한 디렉토리
+        working-directory: ./ # 동일한 디렉토리
         run: npm run build
 
       - name: Copy Files to EC2
