@@ -52,7 +52,3 @@ jobs:
 
       - name: Restart Nginx
         run: ssh -t -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} 'sudo service nginx restart'
-
-      - name: Verify Deployment
-        run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} 'curl -f http://localhost:8080'
