@@ -2,28 +2,28 @@
 import { useState } from "react";
 import Link from "next/link";
 
-const Modalhead = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  let link = "http://localhost:3000";
+const Modalhead = ({ isOpen, setIsOpen }) => {
+  const [isOpen2, setIsOpen2] = useState(false);
+  let link = "http://localhost:3000/product";
   let name = "손";
 
   return (
     <div>
-      <button onClick={() => setIsOpen(true)} className=" ">
+      <button onClick={() => setIsOpen2(true)} className=" ">
         Headphones
       </button>
 
-      {isOpen && (
+      {isOpen2 && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex pt-[80%] px-5">
           <div className="bg-white w-96 h-[95%] rounded-lg p-6 relative">
             <button
-              onClick={() => setIsOpen(false)}
+              onClick={() => setIsOpen2(false) && setIsOpen(false)}
               className="absolute bottom-[105%] right-[45%] text-black px-5 py-2 h-16 w-16 rounded-full bg-white"
             >
               ✕
             </button>
             <div className="mt-8">
-              <button onClick={() => setIsOpen(false)} className=" text-black">
+              <button onClick={() => setIsOpen2(false)} className=" text-black">
                 ← Headphones
               </button>
               <ul className="space-y-4">
@@ -34,7 +34,13 @@ const Modalhead = () => {
                       src="/img/hamburger/MW75S1-PDP_1350x1350_Hero_V2_1a4bd298-a68f-47ca-b050-b3cc3f47283e.webp"
                     ></img>
                     <div>MW75</div>
-                    <Link href={link}> 복{name}</Link>
+                    <Link
+                      href={link}
+                      onClick={() => setIsOpen(false) && setIsOpen2(false)}
+                    >
+                      {" "}
+                      복{name}
+                    </Link>
                   </div>
                   <div>
                     <img

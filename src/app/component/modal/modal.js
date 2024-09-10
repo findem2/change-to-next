@@ -3,7 +3,7 @@ import { useState } from "react";
 import Modalhead from "./\bmodalhead";
 
 const Modal = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  let [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
@@ -38,7 +38,7 @@ const Modal = () => {
               <h2 className="text-lg font-bold mb-4"></h2>
               <ul className="space-y-4">
                 <li className="font-semibold">
-                  <Modalhead></Modalhead>
+                  <Modalhead isOpen={isOpen} setIsOpen={setIsOpen}></Modalhead>
                 </li>
                 <li className="font-semibold">Earphones</li>
                 <li className="font-semibold">Accessories</li>

@@ -2,12 +2,11 @@
 
 import React, { useState } from "react";
 import Modal from "../modal/modal";
+import Link from "next/link";
 
 const Navbar = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  let link = "http://localhost:3000/";
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
   return (
     <div className="z-50 flex min-h-14 justify-between py-2  sticky top-0 bg-white w-full sm:px-5 md:px-10 xl:px-12 custom:flex xxl:max-w-1400">
       <div className="flex items-center justify-center xl:hidden sm:inline-flex ">
@@ -41,11 +40,13 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex items-center justify-center cursor-pointer">
-        <img
-          alt="logo"
-          className="md:min-w-56 max-w-56 min-h-8 sm:max-w-40 max-h-6"
-          src="/img/svg/logo.svg"
-        ></img>
+        <Link href={link}>
+          <img
+            alt="logo"
+            className="md:min-w-56 max-w-56 min-h-8 sm:max-w-40 max-h-6"
+            src="/img/svg/logo.svg"
+          ></img>
+        </Link>
       </div>
       <div className="items-center justify-center sm:hidden xl:inline-flex ">
         <div className="flex items-center justify-center ">
