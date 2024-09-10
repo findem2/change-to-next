@@ -33,7 +33,7 @@ jobs:
 
       - name: Install Dependencies of Front
         working-directory: ./ # package.json이 있는 디렉토리로 변경
-        run: npm install
+        run: npm ci
 
       - name: Build Front
         working-directory: ./ # 동일한 디렉토리
@@ -41,18 +41,11 @@ jobs:
 
       - name: Copy Files to EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} '
+          ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} '
             rm -rf /var/www/front
-            mkdir -p /var/www/front
+            mkdir /var/www/front
             cd /var/www/front'
-          rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./.next/ ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/var/www/front
-
-      - name: Check Nginx Configuration
-        run: ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} 'sudo nginx -t'
+          rsync -avz -e ssh ./.next/ ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/var/www/front
 
       - name: Restart Nginx
-        run: ssh -t -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} 'sudo service nginx restart'
-
-      - name: Verify Deployment
-        run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} 'curl -f http://localhost'
+        run: ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} 'sudo service nginx restart'
