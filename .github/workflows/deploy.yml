@@ -38,10 +38,13 @@ jobs:
             rm -rf /var/www/front
             mkdir /var/www/front
             cd /var/www/front'
-          if ! rsync -avz -e "ssh" ./out/ ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/var/www/front; then
-            echo "Rsync out failed!"
-            exit 1
-          fi
+            
+          rsync -avz -e "ssh" ./.next/ ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/var/www/front/.next
+          rsync -avz -e "ssh" ./package.json ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/var/www/front
+
+          ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} '
+          npm i --production
+          npm run start'
 
       - name: Restart Nginx
         run: ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} 'sudo service nginx restart'
