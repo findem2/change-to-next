@@ -39,11 +39,11 @@ jobs:
             mkdir /var/www/front
             cd /var/www/front'
           if ! rsync -avz -e "ssh" ./out/ ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/var/www/front; then
-            echo "Rsync failed!"
+            echo "Rsync out failed!"
             exit 1
           fi
           if ! rsync -avz -e "ssh" ./src/img ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/var/www/front/; then
-            echo "Rsync failed!"
+            echo "Rsync img failed!"
             exit 1
           fi
 
