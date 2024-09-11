@@ -43,7 +43,7 @@ jobs:
           rsync -avz -e "ssh" ./package.json ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/var/www/front/
 
           ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} '
-            cd /var/www/front && npm i --production && npm run start'
+            cd /var/www/front && npm i --production && pm2 start npm --name "nextFront" -- start'
 
       - name: Restart Nginx
         run: ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} 'sudo service nginx restart'
