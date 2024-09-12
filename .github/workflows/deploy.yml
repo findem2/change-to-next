@@ -47,6 +47,3 @@ jobs:
             cd /var/www/front
             npm i --production
             PORT=3001 /home/ubuntu/.nvm/versions/node/v20.17.0/bin/pm2 start npm --name "nextFront" -- start'
-
-      - name: Restart Nginx
-        run: ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} 'sudo service nginx restart'
