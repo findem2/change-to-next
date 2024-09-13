@@ -1,10 +1,10 @@
 import Footer from "../component/footer/footer";
-import MySwiper from "../component/swifer/myswiper";
+import Swipers from "../component/pageproduct/swiper/swipers";
 
 export default function Product() {
   return (
     <div>
-      <MySwiper />
+      <Swipers />
       <Footer />
     </div>
   );

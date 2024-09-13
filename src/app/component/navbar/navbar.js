@@ -5,7 +5,7 @@ import Modal from "../modal/modal";
 import Link from "next/link";
 
 const Navbar = () => {
-  let link = "hhttp://ec2-13-211-167-18.ap-southeast-2.compute.amazonaws.com/";
+  let link = "http://localhost:3000/";
 
   return (
     <div className="z-50 flex min-h-14 justify-between py-2  sticky top-0 bg-white w-full sm:px-5 md:px-10 xl:px-12 custom:flex xxl:max-w-1400">
