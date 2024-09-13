@@ -18,6 +18,10 @@ module.exports = {
       Craftsmanship: "1479",
     },
     extend: {
+      backgroundImage: {
+        // "hero-pattern": "url('/img/feature/color/MW09/MW09_first_color.png')",
+        "footer-texture": "url('img/feature/color/MW09/MW09_first_color.png')",
+      },
       keyframes: {
         scale: {
           "0%": {

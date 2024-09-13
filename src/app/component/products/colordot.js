@@ -2,9 +2,7 @@
 
 const ColorDot = () => {
   return (
-    <div className="w-6 h-6 rounded-full bg-white m-1 p-0.5 border-2 cursor-pointer border-gray-900 ">
-      <img src="img/feature/color/MW09/MW09_first_color.png" alt="color"></img>
-    </div>
+    <button className="w-6 h-6 rounded-full bg-[url('/img/feature/color/MW09/MW09_first_color.png')] m-1  border-[1px] cursor-pointer border-gray-700 focus:outline-none focus:border-white focus:ring focus:ring-gray-700"></button>
   );
 };
 export default ColorDot;

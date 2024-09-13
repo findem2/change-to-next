@@ -24,7 +24,7 @@ const Item = () => {
             className="absolute bottom-0 opacity-0 hover:opacity-100 hover:animate-fadein animate-fadeout  bg-white"
           />
         </div>
-        <div className="p-8 xxl:p-[39.5px]">
+        <div className="xxl:p-[39.5px]">
           <div>
             <div>
               <div className="TopPrice hidden lg:inline-block float-end text-gray-700">
@@ -42,6 +42,7 @@ const Item = () => {
             </div>
           </div>
           <div className="flex   flex-wrap">
+            <input type="radio" value="ColorDot" />
             <ColorDot></ColorDot>
             <ColorDot></ColorDot>
             <ColorDot></ColorDot>
@@ -60,7 +61,7 @@ const Item = () => {
             className="absolute bottom-0 opacity-0 hover:opacity-100 hover:animate-fadein animate-fadeout  bg-white"
           />
         </div>
-        <div className="p-8 xxl:p-[39.5px]">
+        <div className="xxl:p-[39.5px]">
           <div>
             <div>
               <div className="TopPrice hidden lg:inline-block float-end text-gray-700">
@@ -97,7 +98,7 @@ const Item = () => {
             className="absolute bottom-0 opacity-0 hover:opacity-100 hover:animate-fadein animate-fadeout  bg-white"
           />
         </div>
-        <div className="p-8 xxl:p-[39.5px]">
+        <div className="xxl:p-[39.5px]">
           <div>
             <div>
               <div className="TopPrice hidden lg:inline-block float-end text-gray-700">
@@ -134,7 +135,7 @@ const Item = () => {
             className="absolute bottom-0 opacity-0 hover:opacity-100 hover:animate-fadein animate-fadeout  bg-white"
           />
         </div>
-        <div className="p-8 xxl:p-[39.5px]">
+        <div className="xxl:p-[39.5px]">
           <div>
             <div>
               <div className="TopPrice hidden lg:inline-block float-end text-gray-700">
