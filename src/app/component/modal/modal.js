@@ -39,7 +39,7 @@ const Modal = () => {
                 <li className="">
                   <Modalhead isOpen={isOpen} setIsOpen={setIsOpen}></Modalhead>
                 </li>
-                <li className="text-xl font-mono text-gray-700">
+                <li className="text-xl font-mono  text-gray-700">
                   EARPHONES{" >"}
                 </li>
                 <li className="text-xl font-mono text-gray-700">
