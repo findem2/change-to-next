@@ -4,6 +4,7 @@ import Description from "../component/pageproduct/description/description";
 import FFP from "../component/pageproduct/ffp/ffp";
 import Swipers from "../component/pageproduct/swiper/swipers";
 import YoutubePlayBtn from "../component/pageproduct/youtube play btn/youtube play btn";
+import SPAC from "../component/spac/spac";
 
 export default function Product() {
   return (
@@ -13,6 +14,7 @@ export default function Product() {
       <Description />
       <YoutubePlayBtn />
       <FFP />
+      <SPAC />
       <Footer />
     </div>
   );
