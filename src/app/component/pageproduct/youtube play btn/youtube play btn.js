@@ -1,22 +1,22 @@
 function YoutubePlayBtn() {
   return (
-    <div className=" relative my-48">
+    <div className=" relative py-40 overflow-hidden">
       <img
-        className="scale-[2.7]"
+        className="scale-[2.7] "
         src="img/page-product/MW75_Video-Still_1280x720_V1.webp"
       ></img>
       <div>
-        <div className="text-center absolute -top-20 px-5 text-white text-4xl font-extralight ">
+        <div className="text-center absolute top-16 px-5 text-white text-4xl font-extralight ">
           PERFECT SOUND. PERFECT SILENCE.
         </div>
-        <div className="text-center absolute top-16 px-9 text-white font-extralight text-sm font-sans">
+        <div className="text-center absolute top-52 px-9 text-white font-extralight text-sm font-sans">
           The MW75 Active Noise-Cancelling Wireless Headphones deliver detailed,
           serious acoustics and custom-tailored sound with 40mm Beryllium
           drivers and Adaptive Active Noise Cancellation for the perfect
           combination of sound and silence. Choose to listen in Adaptive, Max,
           or All Day ANC Mode for more tailored listening.
         </div>
-        <button className="absolute px-40 top-64">
+        <button className="absolute px-40 bottom-16">
           <svg
             role="presentation"
             fill="none"
