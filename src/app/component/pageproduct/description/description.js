@@ -26,10 +26,17 @@ function Description() {
       </div>
       <div className="py-10 text-center text-xs text-gray-400">
         Not sure if this is the best headset for you?
-        <p>
+        <div>
           Compare Headphones
           <div className=" bg-gray-200 h-[1px] w-40  "></div>
-        </p>
+        </div>
+      </div>
+      <div className="flex">
+        <button className="hover:text-black text-gray-600 text-sm hover:after:">
+          Feature
+        </button>
+        <button>Tech Specs</button>
+        <button>Support</button>
       </div>
     </div>
   );
