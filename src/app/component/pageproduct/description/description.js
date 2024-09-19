@@ -1,6 +1,6 @@
 function Description() {
   return (
-    <div className="px-5">
+    <div className="p-5">
       <div className="pt-5 flex items-center text-xs text-gray-600">
         <img src="img/page-product/ANC.svg" />
         ANC
@@ -26,17 +26,22 @@ function Description() {
       </div>
       <div className="py-10 text-center text-xs text-gray-400">
         Not sure if this is the best headset for you?
-        <div>
+        <div className="after:justify-center after:content-'' after:w-32 after:h-0.5 after:bg-black after:absolute after:right-28 hover:after:hidden ">
           Compare Headphones
           <div className=" bg-gray-200 h-[1px] w-40  "></div>
         </div>
       </div>
-      <div className="flex">
-        <button className="hover:text-black text-gray-600 text-sm hover:after:">
+      <div className="grid grid-flow-col justify-stretch">
+        <button className="font-light hover:text-black text-gray-600 text-sm hover:after:content-'' hover:after:w-28 hover:after:h-0.5 hover:after:bg-black hover:after:absolute hover:after:mt-5 hover:after:block">
           Feature
         </button>
-        <button>Tech Specs</button>
-        <button>Support</button>
+        <button className="font-light hover:text-black text-gray-600 text-sm hover:after:content-'' hover:after:w-24 hover:after:h-0.5 hover:after:bg-black hover:after:absolute hover:after:mt-5 hover:after:block">
+          Tech
+          <div>Specs</div>
+        </button>
+        <button className="font-light hover:text-black text-gray-600 text-sm hover:after:content-'' hover:after:w-28 hover:after:h-0.5 hover:after:bg-black hover:after:absolute hover:after:mt-5 hover:after:block">
+          Support
+        </button>
       </div>
     </div>
   );

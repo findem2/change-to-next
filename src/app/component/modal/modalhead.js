@@ -1,3 +1,15 @@
+"use client";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
+import "swiper/css/pagination";
+
+import { Pagination, Parallax, FreeMode } from "swiper/modules";
+
+const FFP = () => {
+  return <div className="pl-5"></div>;
+};
+
 // components/Modal.js
 import { useState } from "react";
 import Link from "next/link";
@@ -36,48 +48,92 @@ const Modalhead = ({ isOpen, setIsOpen }) => {
                 {"< "}
                 HEADPHONES
               </button>
-
-              <ul className="flex overflow-scroll mt-2">
-                <li className="p-3 ">
-                  <Link
-                    href={link}
-                    onClick={() => {
-                      setIsOpen(false) && setIsOpen2(false);
-                    }}
-                    className=""
-                  >
+              <Swiper
+                modules={[Pagination, Parallax, FreeMode]}
+                parallax={true}
+                spaceBetween={10}
+                className="w-full flex space-x-5"
+                slidesPerView={1.6} //한 슬라이드에 보여줄 갯수
+              >
+                <SwiperSlide className=" flex text-center ">
+                  <li className="p-3 ">
+                    <Link
+                      href={link}
+                      onClick={() => {
+                        setIsOpen(false) && setIsOpen2(false);
+                      }}
+                      className=""
+                    >
+                      <img
+                        className=""
+                        src="/img/hamburger/MW75S1-PDP_1350x1350_Hero_V2_1a4bd298-a68f-47ca-b050-b3cc3f47283e.webp"
+                      ></img>
+                      <div className="text-center">
+                        <div className=" text-xs font-medium text-gray-700 ">
+                          MW75
+                        </div>
+                        {/* <div className="flex justify-center items-center bg-black h-[1px] text-center w-10 "></div> */}
+                        <div className="text-xs text-gray-600 block">
+                          Active Noise-Canceling
+                          <p>Wireless Headphones</p>
+                        </div>
+                      </div>
+                    </Link>
+                  </li>
+                </SwiperSlide>
+                <SwiperSlide className=" flex text-center ">
+                  <li className="p-3">
                     <img
                       className=""
-                      src="/img/hamburger/MW75S1-PDP_1350x1350_Hero_V2_1a4bd298-a68f-47ca-b050-b3cc3f47283e.webp"
+                      src="/img/hamburger/MH40G4-W2-PDP_1350x1350_Hero_V1_06e56a75-704e-47e6-a742-ef7a3709fefd.webp"
                     ></img>
                     <div className="text-center">
-                      <div className=" text-xs font-medium text-gray-700 after:content-'' after:w-1 after:h-0.5 after:bg-black after:absolute after:mt-2 after:block">
-                        MW75
+                      <div className=" text-xs font-medium text-gray-700 ">
+                        MH40 WIRELESS
                       </div>
-                      <div className="flex justify-center items-center bg-black h-[1px] text-center w-10"></div>
-                      <div className="text-xs text-gray-600 block">
-                        Active Noise-Canceling
-                        <p>Wireless Headphones</p>
+                      {/* <div className="flex justify-center items-center bg-black h-[1px] text-center w-10"></div> */}
+                      <div className="text-xs text-gray-600">
+                        Wireless Over-Ear <p>Headphones</p>
                       </div>
                     </div>
-                  </Link>
-                </li>
-                <li className="p-3">
-                  <img
-                    className=""
-                    src="/img/hamburger/MH40G4-W2-PDP_1350x1350_Hero_V1_06e56a75-704e-47e6-a742-ef7a3709fefd.webp"
-                  ></img>
-                  <div className="text-center">
-                    <div className=" text-xs font-medium text-gray-700 after:content-'' after:w-1 after:h-0.5 after:bg-black after:absolute after:mt-2 after:block">
-                      MH40 WIRELESS
+                  </li>
+                </SwiperSlide>
+                <SwiperSlide className=" flex text-center">
+                  <li className="p-3">
+                    <img
+                      className=""
+                      src="/img/hamburger/MG20GR8-PDP_1350x1350_Hero_V1_f2f54fb6-9d53-4bec-b64f-1477819cfd81.webp"
+                    ></img>
+                    <div className="text-center">
+                      <div className=" text-xs font-medium text-gray-700 ">
+                        MG20
+                      </div>
+                      {/* <div className="flex justify-center items-center bg-black h-[1px] text-center w-10"></div> */}
+                      <div className="text-xs text-gray-600">
+                        Wireless Gaming <p>Headphones</p>
+                      </div>
                     </div>
-                    <div className="flex justify-center items-center bg-black h-[1px] text-center w-10"></div>
-                    <div className="text-xs text-gray-600">
-                      Wireless Over-Ear <p>Headphones</p>
+                  </li>
+                </SwiperSlide>
+                <SwiperSlide className=" flex text-center mr-5">
+                  <li className="p-3">
+                    <img
+                      className=""
+                      src="/img/hamburger/Lambo_MW75_1350x1350_Hero_V1_7b519536-b15c-4720-8ad4-97778194be29.webp"
+                    ></img>
+                    <div className="text-center">
+                      <div className=" text-xs font-medium text-gray-700 ">
+                        MW75 Automobili Lamborghini
+                      </div>
+                      {/* <div className="flex justify-center items-center bg-black h-[1px] text-center w-10"></div> */}
+                      <div className="text-xs text-gray-600">
+                        Active Noise-Cancelling <p>Wireless Headphones</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-              </ul>
+                  </li>
+                </SwiperSlide>
+              </Swiper>
+              <ul className="flex overflow-scroll mt-2"></ul>
               <div className="font-semibold text-gray-500 mt-6">
                 View All Headphones (14)
               </div>

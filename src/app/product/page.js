@@ -1,7 +1,9 @@
 import Footer from "../component/footer/footer";
 import Content from "../component/pageproduct/content/content";
 import Description from "../component/pageproduct/description/description";
+import FFP from "../component/pageproduct/ffp/ffp";
 import Swipers from "../component/pageproduct/swiper/swipers";
+import YoutubePlayBtn from "../component/pageproduct/youtube play btn/youtube play btn";
 
 export default function Product() {
   return (
@@ -9,6 +11,8 @@ export default function Product() {
       <Swipers />
       <Content />
       <Description />
+      <YoutubePlayBtn />
+      <FFP />
       <Footer />
     </div>
   );
