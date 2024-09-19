@@ -4,7 +4,8 @@ import Link from "next/link";
 
 const Modalhead = ({ isOpen, setIsOpen }) => {
   const [isOpen2, setIsOpen2] = useState(false);
-  let link = "http://localhost:3000/product";
+  let link =
+    "http://ec2-13-211-167-18.ap-southeast-2.compute.amazonaws.com//product";
   let name = "손";
 
   return (
