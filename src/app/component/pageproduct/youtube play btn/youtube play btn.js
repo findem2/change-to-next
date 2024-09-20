@@ -24,7 +24,7 @@ function YoutubePlayBtn() {
             width="48"
             height="48"
             viewBox="0 0 70 71"
-            class="icon icon-play-button"
+            className="icon icon-play-button"
           >
             <rect
               x="1"
@@ -33,7 +33,7 @@ function YoutubePlayBtn() {
               height="68"
               rx="34"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
             ></rect>
             <path
               d="M44 35.6816L30.5 43.4759L30.5 27.8874L44 35.6816Z"

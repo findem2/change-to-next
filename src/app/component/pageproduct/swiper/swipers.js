@@ -67,8 +67,8 @@ const Swipers = () => {
             alt="사진변환"
           />
         </div>
-        <div className="swiper-button-next text-slate-700 rounded-full"></div>
-        <div className="swiper-button-prev text-slate-700 rounded-full"></div>
+        <div className="swiper-button-next after:text-slate-700 rounded-full"></div>
+        <div className="swiper-button-prev after:text-slate-700 rounded-full"></div>
       </Swiper>
       <Swiper
         onSwiper={setThumbsSwiper}
