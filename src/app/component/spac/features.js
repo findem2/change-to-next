@@ -120,8 +120,10 @@ function Features() {
         </div>
         <div>
           <img src="img/page-product/features/MW75_Anywhere-Protection_1600x1600_V1.webp"></img>
-          <div className="text-2xl text-gray-700">Anywhere Protection</div>
-          <div className="font-light text-gray-800 text-xs font-mono pb-3">
+          <div className="text-2xl text-gray-700 pt-5 pb-2">
+            Anywhere Protection
+          </div>
+          <div className="font-extralight pb-12">
             For added protection while traveling, the MW75 comes with a durable
             hard shell case that surrounds your headphones with a soft felted
             material, keeping them safe and sound between each use. Additional
@@ -129,7 +131,7 @@ function Features() {
             stay in perfect order.
           </div>
         </div>
-        <div>
+        <div className="pb-12">
           <img src="img/page-product/features/MW75_App-Image_1600x1600_V1.webp"></img>
           <div className="text-2xl text-gray-700 pt-5 pb-2">
             Personalize Your Sound
@@ -190,21 +192,21 @@ function Features() {
         <div className="flex justify-center text-xs text-gray-700 py-10">
           What The Experts are Saying
         </div>
-        <div className="pl-5">
+        <div className="pl-5 slide">
           <Swiper
             modules={[Pagination, Parallax, FreeMode, Navigation, EffectFade]}
             parallax={true}
-            spaceBetween={10}
-            className="w-full flex space-x-5"
+            spaceBetween={30}
             slidesPerView={1} //한 슬라이드에 보여줄 갯수
             loop={true}
             navigation={{
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
             }}
-            effect={"fade"}
+
+            // className="w-full flex space-x-5"
           >
-            <SwiperSlide className=" flex text-center ">
+            <SwiperSlide className="  text-center ">
               <div className="text-gray-700 pb-3 ">
                 The MW75 delivers one of the best audio experiences now
                 available.
@@ -213,7 +215,7 @@ function Features() {
                 - Gizmodo on Master & Dynamic MW75
               </div>
             </SwiperSlide>
-            <SwiperSlide className=" flex text-center ">
+            <SwiperSlide className="  text-center ">
               <div className="text-gray-700 pb-3">
                 The MW75’s are an exercise in high-quality craftsmanship.
               </div>
@@ -221,7 +223,7 @@ function Features() {
                 - Pocket-lint on Master & Dynamic MW75
               </div>
             </SwiperSlide>
-            <SwiperSlide className=" flex text-center pr-5">
+            <SwiperSlide className="  text-center pr-5">
               <div className="text-gray-700 pb-3">
                 The MW75’s are an exercise in high-quality craftsmanship.
               </div>
@@ -229,7 +231,7 @@ function Features() {
                 - Pocket-lint on Master & Dynamic MW75
               </div>
             </SwiperSlide>
-            <SwiperSlide className=" flex text-center pr-5">
+            <SwiperSlide className="  text-center pr-5">
               <div className="text-gray-700 pb-3">
                 Comfort reigns supreme with the MW75 headphones. I can wear
                 these for hours at a time with minimal effort.
@@ -243,6 +245,14 @@ function Features() {
               <div className="swiper-button-prev after:text-slate-700 rounded-full"></div>
             </div>
           </Swiper>
+        </div>
+        <div className="">
+          <div className="text-center text-2xl text-gray-700 px-8">
+            Not sure which headphones are right for you?
+          </div>
+          <button className="flex justify-center cursor-pointer bg-zinc-700  hover:bg-gray-200 px-8 py-4 text-xs font-semibold text-white">
+            Compare All Products
+          </button>
         </div>
       </div>
     </div>

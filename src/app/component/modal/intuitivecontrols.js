@@ -1,6 +1,6 @@
 // components/Modal.js
 import { useState } from "react";
-import Modalhead from "./\bmodalhead";
+import Modalhead from "./modalhead";
 
 const IntuitiveControls = () => {
   const [isOpen, setIsOpen] = useState(false);

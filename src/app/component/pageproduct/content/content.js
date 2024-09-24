@@ -1,3 +1,5 @@
+import CollaborationColors from "../../modal/collaborationColors";
+
 function Content() {
   return (
     <div>
@@ -58,7 +60,9 @@ function Content() {
             />
           </div>
         </div>
-        <div className="text-sm pt-5">Collaboration Colors</div>
+
+        <CollaborationColors />
+
         <div className="bg-gray-200 h-[1px] w-full my-2"></div>
         <button className="cursor-pointer bg-gray-200 w-full text-blacktext-base hover:bg-gray-200 px-8 py-4 text-sm font-semibold text-gray-700 border-2 border-gray-300">
           SOLD OUT

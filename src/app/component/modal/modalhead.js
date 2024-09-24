@@ -31,29 +31,33 @@ const Modalhead = ({ isOpen, setIsOpen }) => {
 
       {isOpen2 && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex pt-[60%] px-5">
-          <div className="bg-white w-96 h-[98%] rounded-lg p-10 relative">
-            <button
-              onClick={() => {
-                setIsOpen2(false) && setIsOpen(false);
-              }}
-              className="absolute bottom-[105%] right-[45%] text-black h-12 w-12 rounded-full bg-white"
-            >
-              ✕
-            </button>
-            <div className="mt-5">
+          <div className="bg-white w-[320px] h-[98%] rounded-lg relative">
+            <div className="px-10 pt-10">
               <button
-                onClick={() => setIsOpen2(false)}
-                className=" text-black font-extralight text-sm"
+                onClick={() => {
+                  setIsOpen2(false) && setIsOpen(false);
+                }}
+                className="absolute bottom-[105%] right-[45%] text-black h-12 w-12 rounded-full bg-white"
               >
-                {"< "}
-                HEADPHONES
+                ✕
               </button>
+              <div className="mt-5 relative">
+                <button
+                  onClick={() => setIsOpen2(false)}
+                  className=" text-black font-extralight text-sm"
+                >
+                  {"< "}
+                  HEADPHONES
+                </button>
+              </div>
+            </div>
+            <div className="pl-10">
               <Swiper
                 modules={[Pagination, Parallax, FreeMode]}
                 parallax={true}
                 spaceBetween={10}
-                className="w-full flex space-x-5"
-                slidesPerView={1.6} //한 슬라이드에 보여줄 갯수
+                className="w-full  space-x-5"
+                slidesPerView={1.5} //한 슬라이드에 보여줄 갯수
               >
                 <SwiperSlide className=" flex text-center ">
                   <li className="p-3 ">
@@ -65,7 +69,7 @@ const Modalhead = ({ isOpen, setIsOpen }) => {
                       className=""
                     >
                       <img
-                        className=""
+                        className="p-5"
                         src="/img/hamburger/MW75S1-PDP_1350x1350_Hero_V2_1a4bd298-a68f-47ca-b050-b3cc3f47283e.webp"
                       ></img>
                       <div className="text-center">
@@ -84,7 +88,7 @@ const Modalhead = ({ isOpen, setIsOpen }) => {
                 <SwiperSlide className=" flex text-center ">
                   <li className="p-3">
                     <img
-                      className=""
+                      className="p-5"
                       src="/img/hamburger/MH40G4-W2-PDP_1350x1350_Hero_V1_06e56a75-704e-47e6-a742-ef7a3709fefd.webp"
                     ></img>
                     <div className="text-center">
@@ -101,7 +105,7 @@ const Modalhead = ({ isOpen, setIsOpen }) => {
                 <SwiperSlide className=" flex text-center">
                   <li className="p-3">
                     <img
-                      className=""
+                      className="p-5"
                       src="/img/hamburger/MG20GR8-PDP_1350x1350_Hero_V1_f2f54fb6-9d53-4bec-b64f-1477819cfd81.webp"
                     ></img>
                     <div className="text-center">
@@ -118,7 +122,7 @@ const Modalhead = ({ isOpen, setIsOpen }) => {
                 <SwiperSlide className=" flex text-center mr-5">
                   <li className="p-3">
                     <img
-                      className=""
+                      className="p-5"
                       src="/img/hamburger/Lambo_MW75_1350x1350_Hero_V1_7b519536-b15c-4720-8ad4-97778194be29.webp"
                     ></img>
                     <div className="text-center">
@@ -133,6 +137,8 @@ const Modalhead = ({ isOpen, setIsOpen }) => {
                   </li>
                 </SwiperSlide>
               </Swiper>
+            </div>
+            <div className="px-10">
               <ul className="flex overflow-scroll mt-2"></ul>
               <div className="font-semibold text-gray-500 mt-6">
                 View All Headphones (14)
@@ -167,7 +173,7 @@ const Modalhead = ({ isOpen, setIsOpen }) => {
                 </svg>
               </div>
             </div>
-            <div className="pt-[8rem]">
+            <div className="px-10 pt-20">
               <div className="flex justify-between">
                 <div className="cursor-pointer text-gray-700 flex text-sm hover:text-black items-center ">
                   AT{" "}
