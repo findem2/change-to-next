@@ -33,7 +33,7 @@ const SoundFeatures = () => {
               onClick={() => setIsOpen(false)}
               className="absolute bottom-[104.5%] left-[0%] text-black  rounded-full bg-white"
             >
-              <div className=" flex">
+              <div className="flex">
                 <div className="text-gray-700 pr-36">Sound and Features</div>
                 <svg
                   role="presentation"
