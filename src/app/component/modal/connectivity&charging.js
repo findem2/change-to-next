@@ -8,7 +8,7 @@ const ConnectivityCharging = () => {
   return (
     <>
       <button onClick={() => setIsOpen(true)} className="flex py-5">
-        <div className="text-gray-700 pr-32">Materials and Design</div>
+        <div className="text-gray-700 pr-24">Connectivity and Charging</div>
         <svg
           role="presentation"
           focusable="false"
@@ -28,13 +28,15 @@ const ConnectivityCharging = () => {
 
       {isOpen && (
         <div className="">
-          <div className="bg-white w-96 h-[98%] rounded-lg relative">
+          <div className="bg-white w- h-[98%] rounded-lg relative">
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute bottom-[187%] left-[5.5%] text-black  rounded-full bg-white"
+              className="absolute bottom-[103%] left-[0.1%] text-black  rounded-full bg-white"
             >
               <div className=" flex">
-                <div className="text-gray-700 pr-40">Materials and Design</div>
+                <div className="text-gray-700 pr-24">
+                  Connectivity and Charging
+                </div>
                 <svg
                   role="presentation"
                   focusable="false"
@@ -53,12 +55,56 @@ const ConnectivityCharging = () => {
               </div>
             </button>
             <div className="">
-              <ul className="space-y-3">
-                <li className="font-light text-gray-700">
-                  MW75 Automobili Lamborghini
+              <ul className="space-y-5 pb-10">
+                <li className="text-gray-600">
+                  <div className="pb-2">Battery Life</div>
+                  <div className="font-light">
+                    Up to 32 hours of battery life or up
+                  </div>
+                  <div className="font-light">to 28 hours with ANC enabled</div>
                 </li>
-                <li className="font-light text-gray-700">MW75 BUGATTI</li>
-                <li className="font-light text-gray-700">MW75 Mercedes-AMG</li>
+                <li className="text-gray-600">
+                  <div className="pb-2">Bluetooth Profile</div>
+                  <div className="font-light">
+                    Bluetooth® 5.1 range of 100ft/30m
+                  </div>
+                  <div className="font-light">
+                    with AAC, aptX™ Adaptive up to 24
+                  </div>
+                  <div className="font-light">bit/ 48kHz, and SBC. Hi-res</div>
+                  <div className="font-light">requires a compatible source</div>
+                  <div className="font-light">device and streaming service</div>
+                </li>
+                <li className="text-gray-600">
+                  <div className="pb-2">Wired Digital Headphone Connection</div>
+                  <div className="font-light">
+                    Supports hi-res audio up to 24-bit /
+                  </div>
+                  <div className="font-light">
+                    96kHz using provided USB-C to
+                  </div>
+                  <div className="font-light">
+                    USB-C cable with supported devices
+                  </div>
+                </li>
+                <li className="text-gray-600">
+                  <div className="pb-2">Analog Headphone Connection</div>
+                  <div className="font-light">
+                    USB-C to 3.5mm cable for optional
+                  </div>
+                  <div className="font-light">analog audio connection</div>
+                </li>
+                <li className="text-gray-600">
+                  <div className="pb-2">Cables</div>
+                  <div className="font-light">
+                    USB-C to 3.5mm audio cable, USB-C
+                  </div>
+                  <div className="font-light">to USB-C charging cable</div>
+                </li>
+                <li className="text-gray-600">
+                  <div className="pb-2">Antenna</div>
+                  <div className="font-light">Internal antenna</div>
+                </li>
               </ul>
             </div>
           </div>

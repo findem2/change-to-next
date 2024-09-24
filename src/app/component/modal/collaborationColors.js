@@ -7,14 +7,17 @@ const CollaborationColors = () => {
 
   return (
     <>
-      <button onClick={() => setIsOpen(true)} className="flex py-5">
+      <button
+        onClick={() => setIsOpen(true)}
+        className="flex py-5 justify-between"
+      >
         <div className="text-sm pr-40">Collaboration Colors</div>
         <svg
           role="presentation"
           focusable="false"
           width="20"
           height="20"
-          className="icon icon-chevron-bottom "
+          className="ml-1 icon icon-chevron-bottom "
           viewBox="0 0 10 7"
         >
           <path
@@ -28,12 +31,12 @@ const CollaborationColors = () => {
 
       {isOpen && (
         <div className="">
-          <div className="bg-white w-96 h-[98%] rounded-lgrelative">
+          <div className="bg-white w-auto h-[98%] rounded-lgrelative">
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute bottom-[10%] left-[5.5%] text-black  rounded-full bg-white"
+              className="absolute bottom-[10%]  text-black  rounded-full bg-white"
             >
-              <div className=" flex">
+              <div className=" flex ">
                 <div className="text-sm pr-40">Collaboration Colors</div>
                 <svg
                   role="presentation"
@@ -41,7 +44,7 @@ const CollaborationColors = () => {
                   width="20"
                   height="20"
                   viewBox="0 0 10 7"
-                  className="icon icon-chevron-bottom -scale-y-100"
+                  className="ml-1 icon icon-chevron-bottom -scale-y-100"
                 >
                   <path
                     d="m1 1 4 4 4-4"
@@ -54,11 +57,15 @@ const CollaborationColors = () => {
             </button>
             <div className="">
               <ul className="space-y-3">
-                <li className="font-light text-gray-700">
+                <li className="font-light text-sm text-gray-700">
                   MW75 Automobili Lamborghini
                 </li>
-                <li className="font-light text-gray-700">MW75 BUGATTI</li>
-                <li className="font-light text-gray-700">MW75 Mercedes-AMG</li>
+                <li className="font-light text-sm text-gray-700">
+                  MW75 BUGATTI
+                </li>
+                <li className="font-light text-sm text-gray-700">
+                  MW75 Mercedes-AMG
+                </li>
               </ul>
             </div>
           </div>

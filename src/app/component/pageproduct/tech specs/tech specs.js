@@ -1,13 +1,15 @@
 import ConnectivityCharging from "../../modal/connectivity&charging";
+import MaterialsDesign from "../../modal/materials&design";
+import SoundFeatures from "../../modal/sound&features";
 
 const TechSpecs = () => {
   return (
     <div className="px-5 py-20">
       <div className="text-xl text-gray-700 pb-6">Tech Specs</div>
-      <div className="space-y-16">
+      <div className="">
+        <MaterialsDesign />
+        <SoundFeatures />
         <ConnectivityCharging />
-        <div className="text-gray-700">Sound and Features</div>
-        <div className="text-gray-700">Connectivity and Charging</div>
       </div>
     </div>
   );
