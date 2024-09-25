@@ -15,7 +15,6 @@ export default function Home() {
       <Craftsmanship />
       <Bugatti />
       <Connect />
-      <Footer />
     </div>
   );
 }

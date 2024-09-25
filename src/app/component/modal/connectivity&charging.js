@@ -31,7 +31,7 @@ const ConnectivityCharging = () => {
           <div className="bg-white w- h-[98%] rounded-lg relative">
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute bottom-[103%] left-[0.1%] text-black  rounded-full bg-white"
+              className="absolute bottom-[103%] left-[0%] text-black  rounded-full bg-white"
             >
               <div className=" flex">
                 <div className="text-gray-700 pr-24">

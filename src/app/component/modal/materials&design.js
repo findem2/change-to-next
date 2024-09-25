@@ -31,7 +31,7 @@ const MaterialsDesign = () => {
           <div className="bg-white h-[5%] rounded-lg relative">
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute bottom-[104%] left-[0%] text-black  rounded-full bg-white"
+              className="absolute bottom-[104.1%] left-[0%] text-black  rounded-full bg-white"
             >
               <div className=" flex">
                 <div className="text-gray-700 pr-32">Materials and Design</div>

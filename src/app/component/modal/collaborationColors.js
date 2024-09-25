@@ -31,10 +31,10 @@ const CollaborationColors = () => {
 
       {isOpen && (
         <div className="">
-          <div className="bg-white w-auto h-[98%] rounded-lgrelative">
+          <div className="bg-white h-[98%] rounded-lg relative">
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute bottom-[10%]  text-black  rounded-full bg-white"
+              className="absolute bottom-[124%]  text-black  rounded-full bg-white"
             >
               <div className=" flex ">
                 <div className="text-sm pr-40">Collaboration Colors</div>

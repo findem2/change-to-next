@@ -31,18 +31,6 @@ function Description() {
           <div className=" bg-gray-200 h-[1px] w-40  "></div>
         </div>
       </div>
-      <div className="grid grid-flow-col justify-stretch">
-        <button className="font-light hover:text-black text-gray-600 text-sm hover:after:content-'' hover:after:w-28 hover:after:h-0.5 hover:after:bg-black hover:after:absolute hover:after:mt-4 hover:after:block">
-          Feature
-        </button>
-        <button className="font-light hover:text-black text-gray-600 text-sm hover:after:content-'' hover:after:w-24 hover:after:h-0.5 hover:after:bg-black hover:after:absolute hover:after:mt-4 hover:after:block">
-          Tech
-          <div>Specs</div>
-        </button>
-        <button className="font-light hover:text-black text-gray-600 text-sm hover:after:content-'' hover:after:w-28 hover:after:h-0.5 hover:after:bg-black hover:after:absolute hover:after:mt-4 hover:after:block">
-          Support
-        </button>
-      </div>
     </div>
   );
 }

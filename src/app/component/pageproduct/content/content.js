@@ -10,7 +10,7 @@ function Content() {
         </div>
         <div className="flex pb-7">
           <div className="text-lg font-medium text-gray-600 pr-1">€629,00</div>
-          <div className=" flex text-xs border-gray-700 border-[1px]  rounded-md bg-gray-700 text-white items-center justify-center">
+          <div className="flex text-xs  rounded-md bg-zinc-700 text-white text-center items-center px-2 py-0 h-5">
             Sold out
           </div>
         </div>
