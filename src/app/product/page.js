@@ -11,6 +11,8 @@ import TechSpecs from "../component/pageproduct/tech specs/tech specs";
 import YoutubePlayBtn from "../component/pageproduct/youtube play btn/youtube play btn";
 import Features from "../component/spac/features";
 import Elevate from "../component/pageproduct/Elevate/elevate";
+import ProductSupport from "../component/pageproduct/productSupport/productSupport";
+import NeedSupport from "../component/needSupport/needSupport";
 
 export default function Product() {
   const scrollRef = useRef([]);
@@ -56,6 +58,8 @@ export default function Product() {
         <InTheBox />
         <Elevate />
         <div ref={(el) => (scrollRef.current[2] = el)}></div>
+        <ProductSupport />
+        <NeedSupport />
       </div>
     </div>
   );

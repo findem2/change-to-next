@@ -85,13 +85,13 @@ const Connect = () => {
             <div className="flex text-center md:text-start text-2xl lg:text-4xl text-gray-600 pb-5">
               Need support? We're here to assist you every step of the way
             </div>
-            <div className="font-extralight pb-8">
+            <div className="text-center font-extralight pb-8">
               Access product support and frequently asked questions in our
               Support Center
             </div>
             <div className="flex justify-center md:justify-normal">
               <button className="cursor-pointer bg-zinc-700 text-blacktext-base hover:bg-gray-200 px-8 py-4 text-sm font-semibold text-white">
-                Learn More
+                Support Center
               </button>
             </div>
           </div>

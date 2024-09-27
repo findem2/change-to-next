@@ -1,0 +1,23 @@
+<svg
+            role="presentation"
+            fill="none"
+            focusable="false"
+            width="48"
+            height="48"
+            viewBox="0 0 70 71"
+            className="icon icon-play-button"
+          >
+            <rect
+              x="1"
+              y="1.68164"
+              width="68"
+              height="68"
+              rx="34"
+              stroke="white"
+              strokeWidth="2"
+            ></rect>
+            <path
+              d="M44 35.6816L30.5 43.4759L30.5 27.8874L44 35.6816Z"
+              fill="white"
+            ></path>
+          </svg>
