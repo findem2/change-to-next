@@ -14,7 +14,38 @@ import {
   Scrollbar,
 } from "swiper/modules";
 
-const Swipers = () => {
+const Swipers = ({
+  image1,
+  setImage1,
+  image2,
+  setImage2,
+  image3,
+  setImage3,
+  image4,
+  setImage4,
+  image5,
+  setImage5,
+  image6,
+  setImage6,
+}) => {
+  // const [image1, setImage1] = useState(
+  //   "/img/page-product/swiperImg/MW75S4-PDP_1.webp"
+  // );
+  // const [image2, setImage2] = useState(
+  //   "/img/page-product/swiperImg/MW75S4-PDP_2.webp"
+  // );
+  // const [image3, setImage3] = useState(
+  //   "/img/page-product/swiperImg/MW75S4-PDP_3.webp"
+  // );
+  // const [image4, setImage4] = useState(
+  //   "/img/page-product/swiperImg/MW75S4-PDP_4.webp"
+  // );
+  // const [image5, setImage5] = useState(
+  //   "/img/page-product/swiperImg/MW75S4-PDP_5.webp"
+  // );
+  // const [image6, setImage6] = useState(
+  //   "/img/page-product/swiperImg/MW75S4-PDP_6.webp"
+  // );
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
     <div>
@@ -38,22 +69,22 @@ const Swipers = () => {
         }} // 네비게이터 모양
       >
         <SwiperSlide className=" flex relative">
-          <img src="img/page-product/MW75S4-PDP_1.webp" alt="사진변환" />
+          <img src={image1} alt="사진변환" />
         </SwiperSlide>
         <SwiperSlide className=" flex relative">
-          <img src="img/page-product/MW75S4-PDP_2.webp" alt="사진변환" />
+          <img src={image2} alt="사진변환" />
         </SwiperSlide>
         <SwiperSlide className=" flex relative">
-          <img src="img/page-product/MW75S4-PDP_3.webp" alt="사진변환" />
+          <img src={image3} alt="사진변환" />
         </SwiperSlide>
         <SwiperSlide className=" flex relative">
-          <img src="img/page-product/MW75S4-PDP_4.webp" alt="사진변환" />
+          <img src={image4} alt="사진변환" />
         </SwiperSlide>
         <SwiperSlide className=" flex relative">
-          <img src="img/page-product/MW75S4-PDP_5.webp" alt="사진변환" />
+          <img src={image5} alt="사진변환" />
         </SwiperSlide>
         <SwiperSlide className=" flex relative">
-          <img src="img/page-product/MW75S4-PDP_6.webp" alt="사진변환" />
+          <img src={image6} alt="사진변환" />
         </SwiperSlide>
         <div className="">
           <img
@@ -81,22 +112,22 @@ const Swipers = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="img/page-product/MW75S4-PDP_1.webp" />
+          <img src={image1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="img/page-product/MW75S4-PDP_2.webp" />
+          <img src={image2} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="img/page-product/MW75S4-PDP_3.webp" />
+          <img src={image3} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="img/page-product/MW75S4-PDP_4.webp" />
+          <img src={image4} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="img/page-product/MW75S4-PDP_5.webp" />
+          <img src={image5} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="img/page-product/MW75S4-PDP_6.webp" />
+          <img src={image6} />
         </SwiperSlide>
         <div className="swiper-scrollbar bg-white"></div>
       </Swiper>

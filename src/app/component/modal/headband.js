@@ -6,7 +6,7 @@ const HeadBand = () => {
 
   return (
     <div>
-      <button onClick={() => setIsOpen(true)} className="">
+      <button onClick={() => setIsOpen(true)} className="focus:rotate-45">
         +
       </button>
 

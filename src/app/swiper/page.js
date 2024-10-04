@@ -1,6 +1,5 @@
 "use client";
 
-import ColorDot from "./colordot";
 import { useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,31 +7,41 @@ import "swiper/swiper-bundle.css";
 import "swiper/css/pagination";
 
 import { Pagination, Parallax, FreeMode } from "swiper/modules";
+import ColorDot from "../component/products/colordot";
 
-const Item1 = () => {
-  const [imageSrc, setImageSrc] = useState("/img/feature/MW09/MW09_Side.png");
-  // const [imageSrc3, setImageSrc3] = useState("/img/feature/MW09/MW09_Side.png");
-  const [isClicked, setIsClicked] = useState(false); // 클릭 여부를 state로 관리
-  const [isClicked3, setIsClicked3] = useState(false); // 클릭 여부를 state로 관리
-
-  const handleClick3 = () => {
-    if (isClicked3) {
-      setImageSrc("/img/feature/MW09/MW09thi_Side.webp");
-      setIsClicked3(false); // 초기 상태 false 일 땐 초기 상태 이미지 src
-    } else {
-      setImageSrc("/img/feature/MW09/MW09thi.webp");
-      setIsClicked3(true); // true일 땐 변경될 이미지 src
-    }
+export default function swiper() {
+  const [imageSrc, setImageSrc] = useState("/img/feature/MW09/MW09.png");
+  const [imageSrcHover, setImageSrcHover] = useState(
+    "/img/feature/MW09/MW09_Side.png"
+  );
+  const handleClick = (i) => {
+    setImageSrc("/img/feature/MW09/MW09{'i'}.png");
+    setImageSrcHover("/img/feature/MW09/MW09{'i'}_Side.png");
   };
 
-  const handleClick = () => {
-    if (isClicked) {
-      setImageSrc("/img/feature/MW09/MW09sec_Side.webp");
-      setIsClicked(false); // 초기 상태 false 일 땐 초기 상태 이미지 src
-    } else {
-      setImageSrc("/img/feature/MW09/MW09sec.webp");
-      setIsClicked(true); // true일 땐 변경될 이미지 src
-    }
+  const handleClick1 = () => {
+    setImageSrc("/img/feature/MW09/MW09.png");
+    setImageSrcHover("/img/feature/MW09/MW09_Side.png");
+  };
+  const handleClick2 = () => {
+    setImageSrc("/img/feature/MW09/MW09sec.webp");
+    setImageSrcHover("/img/feature/MW09/MW09sec_Side.webp");
+  };
+  const handleClick3 = () => {
+    setImageSrc("/img/feature/MW09/MW09thi.webp");
+    setImageSrcHover("/img/feature/MW09/MW09thi_Side.webp");
+  };
+  const handleClick4 = () => {
+    setImageSrc("/img/feature/MW09/MW09fou.webp");
+    setImageSrcHover("/img/feature/MW09/MW09fou_Side.webp");
+  };
+  const handleClick5 = () => {
+    setImageSrc("/img/feature/MW09/MW09fif.webp");
+    setImageSrcHover("/img/feature/MW09/MW09fif_Side.webp");
+  };
+  const handleClick6 = () => {
+    setImageSrc("/img/feature/MW09/MW09six.webp");
+    setImageSrcHover("/img/feature/MW09/MW09six_Side.webp");
   };
 
   return (
@@ -46,11 +55,11 @@ const Item1 = () => {
       >
         <SwiperSlide className="relative">
           <li className="p-5 ">
-            <img src={imageSrc} />
+            {/* <img src={imageSrc} /> */}
             <div className="relative opacity-100 cursor-pointer ">
-              <img src="/img/feature/MW09/MW09.png" alt="before" />
+              <img src={imageSrc} alt="before" />
               <img
-                src="/img/feature/MW09/MW09_Side.png"
+                src={imageSrcHover}
                 alt="after"
                 className="absolute bottom-0 opacity-0 hover:opacity-100 hover:animate-fadein animate-fadeout  bg-white"
               />
@@ -74,16 +83,24 @@ const Item1 = () => {
               </div>
               <div className="flex flex-wrap">
                 {/* <input type="radio" value="ColorDot" /> */}
-                <ColorDot></ColorDot>
-                <div onClick={handleClick}>
+                <div className="w-7 h-7">
+                  <ColorDot onClick={handleClick1}></ColorDot>
+                </div>
+                <div className="w-7 h-7">
+                  <ColorDot onClick={handleClick2}></ColorDot>
+                </div>
+                <div onClick={handleClick3} className="w-7 h-7">
                   <ColorDot></ColorDot>
                 </div>
-                <div onClick={handleClick3}>
+                <div onClick={handleClick4} className="w-7 h-7">
                   <ColorDot></ColorDot>
                 </div>
-                <ColorDot></ColorDot>
-                <ColorDot></ColorDot>
-                <ColorDot></ColorDot>
+                <div onClick={handleClick5} className="w-7 h-7">
+                  <ColorDot></ColorDot>
+                </div>
+                <div onClick={handleClick6} className="w-7 h-7">
+                  <ColorDot></ColorDot>
+                </div>
               </div>
             </div>
             <div className=" absolute text-xs border-zinc-700 border-[1px]  rounded-[0.2rem] bg-zinc-700 text-white items-center justify-center top-3 left-6 p-1">
@@ -160,7 +177,7 @@ const Item1 = () => {
                   €449,00
                 </div>
               </div>
-              <div className="flex   flex-wrap">
+              <div className="flex flex-wrap">
                 <ColorDot></ColorDot>
                 <ColorDot></ColorDot>
                 <ColorDot></ColorDot>
@@ -215,6 +232,4 @@ const Item1 = () => {
       </Swiper>
     </div>
   );
-};
-
-export default Item1;
+}
