@@ -12,7 +12,7 @@ const Trinity = () => {
         <div className="pb-4 md:pb-0 md:pr-3 lg:pr-6 relative">
           <picture>
             <source
-              srcSet="/img/card/MD_MW75_Homepage_Mobile-V1.webp"
+              srcSet="/img/card/MD_MH40-W_Homepage_Mobile-V1.webp"
               media="(max-width: 699px)"
               className="cursor-pointer"
             />

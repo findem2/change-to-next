@@ -29,7 +29,7 @@ export default function Product() {
   return (
     <div>
       <Swipers />
-      <Content />
+      {/* <Content /> */}
       <Description />
       <div className="p-5 pr-0">
         <div

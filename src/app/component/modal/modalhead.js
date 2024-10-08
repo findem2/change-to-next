@@ -16,8 +16,14 @@ import Link from "next/link";
 
 const Modalhead = ({ isOpen, setIsOpen }) => {
   const [isOpen2, setIsOpen2] = useState(false);
-  let link =
-    "http://ec2-13-211-167-18.ap-southeast-2.compute.amazonaws.com/product";
+  let link1 =
+    "http://ec2-13-211-167-18.ap-southeast-2.compute.amazonaws.com/mw75";
+  let link2 =
+    "http://ec2-13-211-167-18.ap-southeast-2.compute.amazonaws.com/mh40-wireless";
+  let link3 =
+    "http://ec2-13-211-167-18.ap-southeast-2.compute.amazonaws.com/mg20";
+  let link4 =
+    "http://ec2-13-211-167-18.ap-southeast-2.compute.amazonaws.com/mw75-automobili-lamborghini";
   let name = "손";
 
   return (
@@ -62,7 +68,7 @@ const Modalhead = ({ isOpen, setIsOpen }) => {
                 <SwiperSlide className=" flex text-center ">
                   <li className="p-3 ">
                     <Link
-                      href={link}
+                      href={link1}
                       onClick={() => {
                         setIsOpen(false) && setIsOpen2(false);
                       }}
@@ -87,53 +93,77 @@ const Modalhead = ({ isOpen, setIsOpen }) => {
                 </SwiperSlide>
                 <SwiperSlide className=" flex text-center ">
                   <li className="p-3">
-                    <img
-                      className="p-5"
-                      src="/img/hamburger/MH40G4-W2-PDP_1350x1350_Hero_V1_06e56a75-704e-47e6-a742-ef7a3709fefd.webp"
-                    ></img>
-                    <div className="text-center">
-                      <div className=" text-xs font-medium text-gray-700 ">
-                        MH40 WIRELESS
+                    <Link
+                      href={link2}
+                      onClick={() => {
+                        setIsOpen(false) && setIsOpen2(false);
+                      }}
+                      className=""
+                    >
+                      <img
+                        className="p-5"
+                        src="/img/hamburger/MH40G4-W2-PDP_1350x1350_Hero_V1_06e56a75-704e-47e6-a742-ef7a3709fefd.webp"
+                      ></img>
+                      <div className="text-center">
+                        <div className=" text-xs font-medium text-gray-700 ">
+                          MH40 WIRELESS
+                        </div>
+                        {/* <div className="flex justify-center items-center bg-black h-[1px] text-center w-10"></div> */}
+                        <div className="text-xs text-gray-600">
+                          Wireless Over-Ear <p>Headphones</p>
+                        </div>
                       </div>
-                      {/* <div className="flex justify-center items-center bg-black h-[1px] text-center w-10"></div> */}
-                      <div className="text-xs text-gray-600">
-                        Wireless Over-Ear <p>Headphones</p>
-                      </div>
-                    </div>
+                    </Link>
                   </li>
                 </SwiperSlide>
                 <SwiperSlide className=" flex text-center">
                   <li className="p-3">
-                    <img
-                      className="p-5"
-                      src="/img/hamburger/MG20GR8-PDP_1350x1350_Hero_V1_f2f54fb6-9d53-4bec-b64f-1477819cfd81.webp"
-                    ></img>
-                    <div className="text-center">
-                      <div className=" text-xs font-medium text-gray-700 ">
-                        MG20
+                    <Link
+                      href={link3}
+                      onClick={() => {
+                        setIsOpen(false) && setIsOpen2(false);
+                      }}
+                      className=""
+                    >
+                      <img
+                        className="p-5"
+                        src="/img/hamburger/MG20GR8-PDP_1350x1350_Hero_V1_f2f54fb6-9d53-4bec-b64f-1477819cfd81.webp"
+                      ></img>
+                      <div className="text-center">
+                        <div className=" text-xs font-medium text-gray-700 ">
+                          MG20
+                        </div>
+                        {/* <div className="flex justify-center items-center bg-black h-[1px] text-center w-10"></div> */}
+                        <div className="text-xs text-gray-600">
+                          Wireless Gaming <p>Headphones</p>
+                        </div>
                       </div>
-                      {/* <div className="flex justify-center items-center bg-black h-[1px] text-center w-10"></div> */}
-                      <div className="text-xs text-gray-600">
-                        Wireless Gaming <p>Headphones</p>
-                      </div>
-                    </div>
+                    </Link>
                   </li>
                 </SwiperSlide>
                 <SwiperSlide className=" flex text-center mr-5">
                   <li className="p-3">
-                    <img
-                      className="p-5"
-                      src="/img/hamburger/Lambo_MW75_1350x1350_Hero_V1_7b519536-b15c-4720-8ad4-97778194be29.webp"
-                    ></img>
-                    <div className="text-center">
-                      <div className=" text-xs font-medium text-gray-700 ">
-                        MW75 Automobili Lamborghini
+                    <Link
+                      href={link4}
+                      onClick={() => {
+                        setIsOpen(false) && setIsOpen2(false);
+                      }}
+                      className=""
+                    >
+                      <img
+                        className="p-5"
+                        src="/img/hamburger/Lambo_MW75_1350x1350_Hero_V1_7b519536-b15c-4720-8ad4-97778194be29.webp"
+                      ></img>
+                      <div className="text-center">
+                        <div className=" text-xs font-medium text-gray-700 ">
+                          MW75 Automobili Lamborghini
+                        </div>
+                        {/* <div className="flex justify-center items-center bg-black h-[1px] text-center w-10"></div> */}
+                        <div className="text-xs text-gray-600">
+                          Active Noise-Cancelling <p>Wireless Headphones</p>
+                        </div>
                       </div>
-                      {/* <div className="flex justify-center items-center bg-black h-[1px] text-center w-10"></div> */}
-                      <div className="text-xs text-gray-600">
-                        Active Noise-Cancelling <p>Wireless Headphones</p>
-                      </div>
-                    </div>
+                    </Link>
                   </li>
                 </SwiperSlide>
               </Swiper>

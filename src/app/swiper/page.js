@@ -51,6 +51,7 @@ export default function swiper() {
         parallax={true}
         spaceBetween={10}
         className="w-full  space-x-5"
+        watchOverflow={true}
         slidesPerView={1.5} //한 슬라이드에 보여줄 갯수
       >
         <SwiperSlide className="relative">
@@ -83,11 +84,11 @@ export default function swiper() {
               </div>
               <div className="flex flex-wrap">
                 {/* <input type="radio" value="ColorDot" /> */}
-                <div className="w-7 h-7">
-                  <ColorDot onClick={handleClick1}></ColorDot>
+                <div onClick={handleClick1} className="w-7 h-7">
+                  <ColorDot></ColorDot>
                 </div>
-                <div className="w-7 h-7">
-                  <ColorDot onClick={handleClick2}></ColorDot>
+                <div onClick={handleClick2} className="w-7 h-7">
+                  <ColorDot></ColorDot>
                 </div>
                 <div onClick={handleClick3} className="w-7 h-7">
                   <ColorDot></ColorDot>

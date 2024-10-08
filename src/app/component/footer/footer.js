@@ -4,6 +4,10 @@
 // import spotify from "../../img/svg/spotify.svg";
 // import twitter from "../../img/svg/twitter.svg";
 
+import About from "../modal/about";
+import Gifting from "../modal/gifting";
+import HelpandInfo from "../modal/help&info";
+
 const Footer = () => {
   return (
     <div>
@@ -34,12 +38,10 @@ const Footer = () => {
               SUBMIT
             </button>
           </div>
-          <div className="custom:w-1/2 custom:flex custom:justify-center custom:items-center custom:pl-32">
+          <div className="custom:w-1/2 custom:flex custom:justify-center custom:items-center custom:pl-32 text-xs">
             <div className="custom:w-1/3">
-              <div className="pt-8 custom:pt-0 pb-5  font-semibold custom:flex custom:justify-center custom:items-center">
-                Help & Info
-              </div>
-              <div className="custom:hidden w-full bg-gray-600 pb-[1px] mb-3 cursor-pointer"></div>
+              <HelpandInfo />
+              <div className="custom:hidden w-full bg-gray-600 pb-[1px]  cursor-pointer"></div>
               <div className="hidden custom:inline-block custom:pb-5 font-extralight cursor-pointer">
                 Product Comparisons
               </div>
@@ -51,10 +53,8 @@ const Footer = () => {
               </div>
             </div>
             <div className="custom:w-1/3">
-              <div className="pb-5 font-semibold custom:flex custom:justify-center custom:items-center">
-                About
-              </div>
-              <div className="custom:hidden w-full bg-gray-600 pb-[1px] mb-3"></div>
+              <About />
+              <div className="custom:hidden w-full bg-gray-600 pb-[1px] "></div>
               <div className="hidden custom:inline-block custom:pb-5 font-extraligh cursor-pointer">
                 About Us
               </div>
@@ -65,10 +65,8 @@ const Footer = () => {
                 Contact Us
               </div>
             </div>
-            <div className="custom:w-1/3 pb-12">
-              <div className=" pb-5 font-semibold custom:flex custom:justify-center custom:items-center">
-                Gifting
-              </div>
+            <div className="custom:w-1/3 pb-8">
+              <Gifting />
               <div className="hidden custom:inline-block custom:pb-5 font-extralight cursor-pointer">
                 Corporate Gifting
               </div>

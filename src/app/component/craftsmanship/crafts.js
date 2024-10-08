@@ -22,31 +22,31 @@ const Craftsmanship = () => {
           </div>
         </div>
         <div className="lg:flex lg:max-h-72 ">
-          <div className="flex relative w-[100%] lg:w-1/3 lg:pr-6 h-80 lg:max-h-72 overflow-hidden pb-8">
+          <div className="flex relative w-[100%] lg:w-1/3 lg:pr-6 lg:max-h-72 overflow-hidden mb-8">
             <img
               src="/img/crafts/sound.jpg"
               alt=""
-              className="lg:hover:scale-125 lg:peer-[1]:hover:scale-50 object-cover"
+              className="mobile:scale-110 lg:hover:scale-125 lg:peer-[1]:hover:scale-50 object-cover"
             ></img>
             <div className=" absolute text-xl lg:text-3xl right-5 lg:right-20 bottom-16 text-white">
               SOUND
             </div>
           </div>
-          <div className="flex relative w-[100%] lg:w-1/3 lg:pr-6 lg:max-h-72 overflow-hidden pb-8">
+          <div className="flex relative w-[100%] lg:w-1/3 lg:pr-6 lg:max-h-72 overflow-hidden mb-8">
             <img
               src="/img/crafts/materials.jpg"
               alt=""
-              className="lg:hover:scale-125 lg:peer-[2] peer-[1]"
+              className="mobile:scale-110 lg:hover:scale-125 lg:peer-[2] peer-[1]"
             ></img>
             <div className=" absolute text-xl lg:text-3xl right-5 lg:right-20 bottom-16 text-white">
               MATERIALS
             </div>
           </div>
-          <div className="flex relative w-[100%] lg:w-1/3 lg:max-h-72 overflow-hidden  pb-8">
+          <div className="flex relative w-[100%] lg:w-1/3 lg:max-h-72 overflow-hidden  mb-8">
             <img
               src="/img/crafts/design.jpg"
               alt=""
-              className="lg:hover:scale-125 lg:peer-[3]"
+              className="mobile:scale-110 lg:hover:scale-125 lg:peer-[3]"
             ></img>
             <div className=" absolute text-xl lg:text-3xl right-5 lg:right-20 bottom-16 text-white">
               DESIGN
@@ -54,7 +54,7 @@ const Craftsmanship = () => {
           </div>
         </div>
         <div className="pt-3">
-          <button className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-200 px-8 py-4 text-sm font-semibold text-gray-700 block float-end">
+          <button className="cursor-pointer bg-white text-b  lacktext-base hover:bg-gray-200 px-8 py-4 text-sm font-semibold text-gray-700 block float-end">
             Learn More
           </button>
           <div className="text-white font-extralight text-opacity-85">
@@ -63,7 +63,7 @@ const Craftsmanship = () => {
           </div>
         </div>
       </div>
-      <div className="h-6"></div>
+      <div className="h-5"></div>
     </div>
   );
 };

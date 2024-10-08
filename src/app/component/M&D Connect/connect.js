@@ -4,7 +4,7 @@
 const Connect = () => {
   return (
     <div className="bg-white">
-      <div className="p-5 lg:p-12 pb-0">
+      <div className="px-5 py-6 lg:p-12 pb-0">
         <div className="lg:flex items-center">
           <div className="hidden lg:inline w-1/2 p-12 xl:p-20">
             <div className="text-xl lg:text-4xl text-gray-600 pb-5">
@@ -24,8 +24,8 @@ const Connect = () => {
             alt=""
             className="w-full lg:w-1/2"
           ></img>
-          <div className="p-6 md:p-8  lg:hidden ">
-            <div className="flex text-center md:text-start text-2xl text-gray-600 pb-5">
+          <div className="p-5 md:p-6 lg:hidden ">
+            <div className="flex text-center md:text-start text-xl text-gray-600 pb-5">
               Get The Most Out Of Your Sound with M&D Connect
             </div>
             <div className="text-center md:text-start font-extralight pb-8">
@@ -40,7 +40,7 @@ const Connect = () => {
             </div>
           </div>
         </div>
-        <div className=" md:flex text-center px-12 pb-10 pt-8 lg:p-16">
+        <div className=" md:flex text-center px-8 pb-10 pt-8 lg:p-16">
           <div className="md:w-1/3 md:mr-24">
             <div className="text-xs lg:text-lg text-gray-600 pb-4">
               Free Premium Shipping
@@ -90,7 +90,7 @@ const Connect = () => {
               Support Center
             </div>
             <div className="flex justify-center md:justify-normal">
-              <button className="cursor-pointer bg-zinc-700 text-blacktext-base hover:bg-gray-200 px-8 py-4 text-sm font-semibold text-white">
+              <button className="cursor-pointer bg-zinc-900 text-blacktext-base hover:bg-gray-200 px-8 py-4 text-sm font-semibold text-white">
                 Support Center
               </button>
             </div>
