@@ -2,16 +2,16 @@
 
 import React, { useRef } from "react";
 
-import Content from "../component/pageproduct/content/content";
-import Description from "../component/pageproduct/description/description";
-import FFP from "../component/pageproduct/ffp/ffp";
-import InTheBox from "../component/pageproduct/in the box/in the box";
-import Swipers from "../component/pageproduct/swiper/swipers";
-import TechSpecs from "../component/pageproduct/tech specs/tech specs";
-import YoutubePlayBtn from "../component/pageproduct/youtube play btn/youtube play btn";
+import Content from "./content/content";
+import Description from "./description/description";
+import FFP from "./ffp/ffp";
+import InTheBox from "./in the box/in the box";
+import Swipers from "./swiper/swipers";
+import TechSpecs from "./tech specs/tech specs";
+import YoutubePlayBtn from "./youtube play btn/youtube play btn";
 import Features from "../component/spac/features";
-import Elevate from "../component/pageproduct/Elevate/elevate";
-import ProductSupport from "../component/pageproduct/productSupport/productSupport";
+import Elevate from "./Elevate/elevate";
+import ProductSupport from "./productSupport/productSupport";
 import NeedSupport from "../component/needSupport/needSupport";
 
 export default function Product() {
@@ -36,14 +36,14 @@ export default function Product() {
           onClick={handleScrollView}
           className="flex justify-around text-center"
         >
-          <span className="font-light hover:text-black text-gray-600 text-sm hover:after:content-'' hover:after:w-28 hover:after:h-0.5 hover:after:bg-black hover:after:absolute hover:after:mt-4 hover:after:block">
+          <span className="text-center font-light hover:text-black text-gray-600 text-sm hover:after:content-'' hover:after:w-28 hover:after:h-0.5 hover:after:bg-black hover:after:absolute hover:after:mt-4 hover:after:block">
             Feature
           </span>
-          <div className="font-light hover:text-black text-gray-600 text-sm hover:after:content-'' hover:after:w-24 hover:after:h-0.5 hover:after:bg-black hover:after:absolute hover:after:mt-[1.1rem] hover:after:block">
+          <div className="text-center font-light hover:text-black text-gray-600 text-sm hover:after:content-'' hover:after:w-24 hover:after:h-0.5 hover:after:bg-black hover:after:absolute hover:after:mt-[1.1rem] hover:after:block">
             <span>Tech</span>
             <div>Specs</div>
           </div>
-          <span className="font-light hover:text-black text-gray-600 text-sm hover:after:content-'' hover:after:w-28 hover:after:h-0.5 hover:after:bg-black hover:after:absolute hover:after:mt-4 hover:after:block">
+          <span className="text-center font-light hover:text-black text-gray-600 text-sm hover:after:content-'' hover:after:w-28 hover:after:h-0.5 hover:after:bg-black hover:after:absolute hover:after:mt-4 hover:after:block">
             Support
           </span>
         </div>

@@ -2,16 +2,16 @@
 
 import React, { useRef } from "react";
 
-import Content from "../component/pageproduct/content/content";
-import Description from "../component/pageproduct/description/description";
-import FFP from "../component/pageproduct/ffp/ffp";
-import InTheBox from "../component/pageproduct/in the box/in the box";
-import Swipers from "../component/pageproduct/swiper/swipers";
-import TechSpecs from "../component/pageproduct/tech specs/tech specs";
-import YoutubePlayBtn from "../component/pageproduct/youtube play btn/youtube play btn";
+import Content from "../mw75/content/content";
+import Description from "../mw75/description/description";
+import FFP from "../mw75/ffp/ffp";
+import InTheBox from "../mw75/in the box/in the box";
+import Swipers from "../mw75/swiper/swipers";
+import TechSpecs from "../mw75/tech specs/tech specs";
+import YoutubePlayBtn from "../mw75/youtube play btn/youtube play btn";
 import Features from "../component/spac/features";
-import Elevate from "../component/pageproduct/Elevate/elevate";
-import ProductSupport from "../component/pageproduct/productSupport/productSupport";
+import Elevate from "../mw75/Elevate/elevate";
+import ProductSupport from "../mw75/productSupport/productSupport";
 import NeedSupport from "../component/needSupport/needSupport";
 
 export default function Product() {

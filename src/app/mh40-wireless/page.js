@@ -2,16 +2,15 @@
 
 import React, { useRef } from "react";
 
-import Content from "../component/pageproduct/content/content";
-import Description from "../component/pageproduct/description/description";
-import FFP from "../component/pageproduct/ffp/ffp";
-import InTheBox from "../component/pageproduct/in the box/in the box";
-import Swipers from "../component/pageproduct/swiper/swipers";
-import TechSpecs from "../component/pageproduct/tech specs/tech specs";
-import YoutubePlayBtn from "../component/pageproduct/youtube play btn/youtube play btn";
+import Description from "../mh40-wireless/description/description";
+import FFP from "../mh40-wireless/ffp/ffp";
+import InTheBox from "../mw75/in the box/in the box";
+import Swipers from "../mh40-wireless/swiper/swipers";
+import TechSpecs from "../mh40-wireless/tech specs/tech specs";
+import YoutubePlayBtn from "../mh40-wireless/youtube play btn/youtube play btn";
 import Features from "../component/spac/features";
-import Elevate from "../component/pageproduct/Elevate/elevate";
-import ProductSupport from "../component/pageproduct/productSupport/productSupport";
+import Elevate from "../mh40-wireless/Elevate/elevate";
+import ProductSupport from "../mh40-wireless/productSupport/productSupport";
 import NeedSupport from "../component/needSupport/needSupport";
 
 export default function Product() {
